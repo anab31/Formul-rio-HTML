@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Formulário HTML </title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body bgcolor="Pink" text="black" >
+
+   <h2 align="center"> Formulário de Admissão de Pacientes Suspeitos de Coronavírus </h2>
+   <table border="0" align="center" width="500" bordercolor="black">
+<tr><td>
+
+
+    <fieldset>
+        <legend align="center"> <strong> INFORME SEUS DADOS </strong></legend>
+       <form action="enviar.php" method="post" name="cadastro">
+
+    <table border="0" bordercolor="black" >
+       
+
+        <label> Nome: </label> 
+        <input type="text" id="nome" name="nome" size="30" maxlength="50" placeholder="Digite seu nome completo" required />
+        <br/> <br/>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <label> Data de nascimento: </label> 
+        <input type="date" id="data_nasc" name="data_nasc" min="1950-01-01" max="2022-07-22" required />
+        <br/> <br/> 
+                
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+       <label> Sexo: </label>
+       <label><input type="radio" id="sexo" name="sexo" value="F" required />
+         Feminino </label>
+       <label><input type="radio" id="sexo" name="sexo" value="M" required />
+       Masculino </label>
+       <label><input type="radio" id="sexo" name="sexo" value="Outro" required/>
+       Outro: </label>
+       <input type="texto" id="outro" name="outro" disabled /> 
+       <br/> <br/>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+      <label> CPF </label>
+      <input type="text" id="cpf" name="cpf" size="40" placeholder="___.___.___-__" required /> 
+      <br/> <br/>
+
+ <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+      <label> Telefone: </label>
+      <input type="tel" id="telefone" name="telefone" size="40" placeholder="Informe seu telefone (XX) XXXX-XXXXX" required />
+      <br/> <br/>
+      
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  
+     <label> E-mail: </label>
+     <input type="email" id="mail" name="mail" size="30" placeholder="Digite seu E-mail corretamente"  /> 
+     <br/> <br/>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <label> Histórico Médico de Saúde: </label>
+    <br/> 
+    <label><input type="checkbox" id="anemia" name="anemia" value="anemia" /> Anemia </label>
+    <br/>
+    <label><input type="checkbox" id="câncer" name="câncer" value="câncer" /> Câncer </label>
+    <br/>
+    <label><input type="checkbox" id="asma" name="asma" value="asma" /> Asma</label>
+    <br/>
+    <label><input type="checkbox" id="doença cardiaca" name="doença cardiaca" value="doença cardiaca" /> Doença Cardíaca </label>
+    <br/>
+    <label><input type="checkbox" id="diabetes" name="diabetes" value="diabetes" /> Diabetes</label> 
+    <br/> 
+    <label><input type="checkbox" id="dor de garganta" name="dor de garganta" value="dor de garganta" /> Dor de Garganta </label>
+    <br/>
+    <label><input type="checkbox" id="ataque cardíaco" name="Ataque Cardíaco" value="ataque cardíaco" /> ataque cardíaco </label>
+    <br/>
+    <label><input type="checkbox" id="Doenças dos Rins" name="Doenças dos Rins" value="Doenças dos Rins" /> Doenças dos Rins</label>
+    <br/>
+    <label><input type="checkbox" id="Transtornos Neurológicos" name="Transtornos Neurológicos" value="Transtornos Neurológicos" /> Transtornos Neurológicos </label>
+    <br/>
+    <label><input type="checkbox" id="outros" name="outros" value="outros" /> Outros</label> 
+    
+    <br/><br/>
+    
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+   
+    <label> Informe aqui o histórico médico da sua família: </label> 
+    <textarea id="assunto" name="assunto" cols="40" rows="10" maxlength="240" placeholder="Digite aqui" required ></textarea> 
+    <br/><br/>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <label> Você Fuma: </label>
+    <label><input type="radio" id="fuma" name="fuma" value="Fuma" />
+      Não </label>
+    <label><input type="radio" id="fuma" name="fuma" value="Não Fuma"  />
+    0-1 maço/dia </label>
+    <label><input type="radio" id="fuma" name="fuma" value="Fuma" />
+    2+ maço/dia </label> 
+
+    <br/> <br/>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+   
+    <fieldset>
+        <legend align="center"> <strong> OBSERVAÇÕES </strong></legend>
+       <form action="enviar.php" method="post" name="cadastro">
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------->
+
+<label> Informações preenchidas pelo Dr.(Dra): </label> 
+<textarea id="assunto" name="assunto" cols="40" rows="10" maxlength="240" placeholder="Digite aqui" required ></textarea> 
+
+<br/><br/>
+
+<th colspan="2"> 
+    <input type="submit" id="enviar" name="enviar" value="ENVIAR" />
+<input type="reset" id="limpar" name="limpar" value="LIMPAR" />  
+
+<BR/><BR/>
+
+<button type="submit" id="send" name="send">
+    <img src="img/download.png" width="40" height="20" alt="send" />
+
+</button> 
+
+
+</table>
+
+
+
+
+       </form> 
+
+
+
+    </fieldset>
+
+</tr> </td>
+
+
+      </table>
+
+
+    </body>
+
+
+</html>
